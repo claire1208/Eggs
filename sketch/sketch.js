@@ -55,7 +55,7 @@ function draw() {
                 b.vy = -b.vy;
                 blocks.splice(i, 1);
                 // coins.add(c);
-                // song1.play();
+                song1.play();
             }
         }
         if (b.collision(player))
@@ -93,9 +93,9 @@ function draw() {
 
 
 function mousePressed() {
-    // if((mouseX <= 423) && (mouseX >= 263) && (mouseY <= 355) && (mouseY >= 300)){
+    if((mouseX <= 523) && (mouseX >= 363) && (mouseY <= 455) && (mouseY >= 400)){
     reset();
-    // }
+     }
 }
 
 function reset() {

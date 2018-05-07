@@ -7,8 +7,8 @@ var sad;
 var surprised;
 var happiness;
 
-// var coins;
-// var score=0;
+var coins;
+var score=0;
 
 
 function preload() {
@@ -56,6 +56,8 @@ function draw() {
                 blocks.splice(i, 1);
                 // coins.add(c);
                 song1.play();
+                score = score + 1;
+                text('score: '+ score, 100, 20);
             }
         }
         if (b.collision(player))

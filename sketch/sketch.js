@@ -68,7 +68,7 @@ function draw() {
 
         if (blocks.length > 0) {
             showScore( score );
-             text(score, width/2, height/2);
+//              text(score, width/2, height/2);
         }
         else {
             text("you win!", width / 2, height / 2);

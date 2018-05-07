@@ -57,7 +57,7 @@ function draw() {
                 // coins.add(c);
                 song1.play();
                 score = score + 1;
-                showScore( score );
+                //showScore( score );
             }
         }
         if (b.collision(player))
@@ -67,7 +67,8 @@ function draw() {
         b.show();
 
         if (blocks.length > 0) {
-            // text(score, width/2, height/2);
+            showScore( score );
+             text(score, width/2, height/2);
         }
         else {
             text("you win!", width / 2, height / 2);
@@ -95,7 +96,7 @@ function draw() {
 
 function showScore(x){
     text('SCORE: '+x, 100, 20);
-    alert(x);
+    //alert(x);
 }
 
 function mousePressed() {

@@ -58,6 +58,7 @@ function draw() {
                 song1.play();
                 score = score + 1;
                 text('score: '+ score, 100, 20);
+                alert(score);
             }
         }
         if (b.collision(player))

@@ -1,4 +1,3 @@
-//by yunzhu
 var player;
 var blocks = [];
 var b;
@@ -19,8 +18,8 @@ function preload() {
 }
 
 function setup() {
-    createCanvas(900, 600);
-    // song2.play();
+    createCanvas(700, 550);
+    song2.play();
     // coins = new Group();
 
     player = new Player();
@@ -33,8 +32,8 @@ function setup() {
 
 function draw() {
     background("lightblue");
-    angry = parent.document.getElementById("angry").innerHTML
-    sad = parent.document.getElementById("sad").innerHTML
+//     angry = parent.document.getElementById("angry").innerHTML
+//     sad = parent.document.getElementById("sad").innerHTML
     surprised = parent.document.getElementById("surprised").innerHTML
     happiness = parent.document.getElementById("happy").innerHTML
     // console.log(angry, sad, surprised, happiness);

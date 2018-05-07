@@ -32,8 +32,8 @@ function setup() {
 
 function draw() {
     background("lightblue");
-//     angry = parent.document.getElementById("angry").innerHTML
-//     sad = parent.document.getElementById("sad").innerHTML
+    angry = parent.document.getElementById("angry").innerHTML 
+    sad = parent.document.getElementById("sad").innerHTML
     surprised = parent.document.getElementById("surprised").innerHTML
     happiness = parent.document.getElementById("happy").innerHTML
     // console.log(angry, sad, surprised, happiness);
@@ -42,7 +42,7 @@ function draw() {
 
         fill('#f1f2e5');
         textSize(20);
-        text('Yunzhu \'s Egg House', 300, 20);
+        text('EMOTION EGG HOUSE', 300, 20);
         if (parent.document.getElementById("start").innerHTML === "start") {
             player.move();
             b.move();

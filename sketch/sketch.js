@@ -57,8 +57,7 @@ function draw() {
                 // coins.add(c);
                 song1.play();
                 score = score + 1;
-                text('score: '+ score, 100, 20);
-                alert(score);
+                showScore( score );
             }
         }
         if (b.collision(player))
@@ -94,6 +93,10 @@ function draw() {
     }
 }
 
+function showScore(x){
+    text('SCORE: '+x, 100, 20);
+    alert(x);
+}
 
 function mousePressed() {
     if((mouseX <= 523) && (mouseX >= 363) && (mouseY <= 455) && (mouseY >= 400)){

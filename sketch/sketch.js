@@ -18,7 +18,7 @@ function preload() {
 }
 
 function setup() {
-    createCanvas(600, 500);
+    createCanvas(windowWidth, windowHeight);
     song2.play();
     // coins = new Group();
 
